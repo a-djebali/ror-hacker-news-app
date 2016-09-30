@@ -30,6 +30,9 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 # take care of users' votes 
 gem 'acts_as_votable', '~> 0.10.0'
 
+# powerful and flexible components aims to create your forms
+gem 'simple_form', '~> 3.3', '>= 3.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

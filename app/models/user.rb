@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  # User's association has many links 
+  # User's association has many links & comments  
   has_many :links
+  has_many :comments
 end
