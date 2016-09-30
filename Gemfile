@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use devise for authentication (sign in/up)
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
+# take care of users' votes 
+gem 'acts_as_votable', '~> 0.10.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
