@@ -4,6 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  # turn the email to lowercase (downcase) format before hitting the database
+  before_save{ self.email = email.downcase}
+
   # User's association has many links & comments  
   has_many :links
   has_many :comments
