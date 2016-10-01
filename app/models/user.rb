@@ -7,4 +7,7 @@ class User < ActiveRecord::Base
   # User's association has many links & comments  
   has_many :links
   has_many :comments
+
+  # ensure that user name will be present, unique, and well sized
+  validates :name, presence: true, uniqueness: {case_sensitive: false}, length: {minimum:3, maximum:25}
 end
